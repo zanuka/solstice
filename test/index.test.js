@@ -1,6 +1,6 @@
 import sinon from 'sinon/pkg/sinon';
 import {expect} from 'chai';
-import Solstice from '../src/solstice';
+import Solstice from '../src/index';
 
 describe('Solstice', function() {
   let sandbox;

@@ -1,7 +1,9 @@
-// require test/index.text.js`
-const testsContext = require.context('./', false, /test\.js$/);
-testsContext.keys().forEach(testsContext);
+// This file cannot be written with ECMAScript 2015 because it has to load
+// the Babel require hook to enable ECMAScript 2015 features!
+require("babel-register")({
+  optional: "runtime"
+});
 
-// require src/solstice.js`
-const componentsContext = require.context('../src/', false, /solstice\.js$/);
-componentsContext.keys().forEach(componentsContext);
+// The tests, however, can and should be written with ECMAScript 2015.
+require("./index.test.js");
+
