@@ -21,7 +21,7 @@
     "test-ci": "npm run build",
     "coveralls": "coveralls < resport-lcov/**/*lcov.info",
     "postcoveralls": "rimraf coverage",
-    "prepublish": "npm run compile",
+    "prepublish": "npm run build",
     "postpublish": "git push origin master --follow-tags"
   },
   "babel": {
