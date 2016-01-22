@@ -4,20 +4,12 @@
 
 Solstice is a vanilla Javascript date picker that requires minimal set up.
 
-#### work in progress:
-- the example in `build/index.html` is currently supported
-- fix in progress for requiring via es5 require and es6 import
-
 ## Installation
 
 `npm install solstice`
 
 ## npm scripts
-- ```npm run build``` - Creates es5 bundle via webpack and Babel6.
-- ```npm run watch``` - Watch files continuously, rebuild incrementally.
-- ```npm run test``` - Runs es6 tests in Karma, live watch mode for devs.
-- ```npm start``` - Hot reloading via the webpack dev server.
-- ```npm run clean``` - Clean out coverage directory
+- ```npm run build``` - transpiles ES6 to ES5 with Babel6.
 
 ## Usage
 If you're not using Node for your project you'll need to make sure that you've built out the dist directory. Then you should be able to access solstice by including a script tag.
