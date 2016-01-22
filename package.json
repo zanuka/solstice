@@ -14,7 +14,8 @@
     "email": "jason.veselka@live.com"
   },
   "scripts": {
-    "build": "babel -d ./lib ./src",
+    "build": "node_modules/babel-cli/bin/babel.js -d ./lib ./src",
+    "prepublish": "npm run build",
     "demo": "open html/index.html"
   },
   "babel": {
